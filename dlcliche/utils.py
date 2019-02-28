@@ -482,7 +482,7 @@ def skew_bin_clf_preds(y_pred, binary_bias=None, logger=None):
         _preds[:, 1] = ps
         _preds[:, 0] = 1 - ps
         logger = get_logger() if logger is None else logger
-        logger.info(f' @skew{"+" if binary_bias >= 0 else ""}{binary_bias}')
+#         logger.info(f' @skew{"+" if binary_bias >= 0 else ""}{binary_bias}')
     return _preds
 
 def print_clf_metrics(y_true, y_pred, average='weighted', binary_bias=None, title_prefix='', logger=None):
