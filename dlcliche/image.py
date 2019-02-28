@@ -71,8 +71,8 @@ def read_file_shapes(files, num_threads=8):
 def load_rgb_image(filename):
     """Load image file and make sure that format is RGB."""
     img = cv2.imread(str(filename))
-    if img is None:
-        raise ValueError(f'Failed to load {filename}.')
+#     if img is None:
+#         raise ValueError(f'Failed to load {filename}.')
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     return img
 
